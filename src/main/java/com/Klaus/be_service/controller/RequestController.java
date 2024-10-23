@@ -38,6 +38,7 @@ public class RequestController {
             templateModel.put("phone", request.getPhoneNumber());
             templateModel.put("email", request.getEmailId());
             templateModel.put("model", request.getModel());
+            templateModel.put("price", request.getPrice());
 //            templateModel.put("base64Logo", base64Logo);
 
             emailService.sendHtmlMessage(

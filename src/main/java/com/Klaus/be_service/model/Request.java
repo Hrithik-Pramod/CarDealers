@@ -13,6 +13,7 @@ public class Request {
     public String name;
     public String phoneNumber;
     public String emailId;
+    public String price;
 }
 
 
