@@ -1,33 +1,32 @@
 package com.Klaus.be_service.controller;
 
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.util.StreamUtils;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 @RestController
 @RequestMapping("/images")
+@CrossOrigin
 public class ImageController {
+
+    // Load image path from application properties
+    @Value("${image.folder.path}")
+    private String imageFolderPath;
 
     @GetMapping("/{imageName}")
     public ResponseEntity<byte[]> getImage(@PathVariable String imageName) throws IOException {
-        // Path to the image in the resources/images folder
-        ClassPathResource imgFile = new ClassPathResource("images/" + imageName);
+        // Construct the path to the image file
+        Path imgPath = Path.of(imageFolderPath, imageName);
 
-        // Determine the file extension to set the content type accordingly
+        // Determine the content type based on the file extension
         String fileExtension = imageName.substring(imageName.lastIndexOf('.') + 1).toLowerCase();
         MediaType mediaType;
-
         switch (fileExtension) {
             case "png":
                 mediaType = MediaType.IMAGE_PNG;
@@ -36,20 +35,15 @@ public class ImageController {
             case "jpeg":
                 mediaType = MediaType.IMAGE_JPEG;
                 break;
-            case "gif":
-                mediaType = MediaType.IMAGE_GIF;
-                break;
             default:
-                // Return 415 Unsupported Media Type if format is not supported
-                return ResponseEntity.status(HttpStatus.UNSUPPORTED_MEDIA_TYPE).build();
+                mediaType = MediaType.APPLICATION_OCTET_STREAM;
+                break;
         }
 
-        // Read the image into a byte array
-        byte[] imageBytes = Files.readAllBytes(Paths.get(imgFile.getURI()));
+        // Read the file as a byte array
+        byte[] imageBytes = Files.readAllBytes(imgPath);
 
-        // Return the image with the correct content type
         return ResponseEntity.ok()
-                .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"" + imageName + "\"")
                 .contentType(mediaType)
                 .body(imageBytes);
     }

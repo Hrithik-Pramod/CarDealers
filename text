@@ -1,6 +1,6 @@
-'http://localhost:8080/images/BMWiXM601.png',
-    'http://localhost:8080/images/BMWiXM602.png',
-    'http://localhost:8080/images/BMWiXM603.png',
-    'http://localhost:8080/images/BMWiXM604.png',
-    'http://localhost:8080/images/BMWiXM605.png',
-    'http://localhost:8080/images/BMWiXM606.png',
+require('../images/BMW8erCabrioletMAutomobile1.png'),
+    require('../images/BMW8erCabrioletMAutomobile2.png'),
+    require('../images/BMW8erCabrioletMAutomobile3.png'),
+    require('../images/BMW8erCabrioletMAutomobile4.png'),
+    require('../images/BMW8erCabrioletMAutomobile5.png'),
+    require('../images/BMW8erCabrioletMAutomobile6.png')
