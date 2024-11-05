@@ -6,6 +6,91 @@
   <component name="ChangeListManager">
     <list default="true" id="60055ec3-4a6e-4d52-8677-930ab4811e34" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/BeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/BeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/controller/ImageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/controller/RequestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/model/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/model/Request2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW1erMAutomobil1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW1erMAutomobil2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW1erMAutomobil3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW1erMAutomobil4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW1erMAutomobil5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW1erMAutomobil6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW2erCoupéMAutomobile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW2erCoupéMAutomobile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW2erCoupéMAutomobile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW2erCoupéMAutomobile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW2erCoupéMAutomobile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW2erCoupéMAutomobile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erLimousineMAutomobile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erLimousineMAutomobile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erLimousineMAutomobile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erLimousineMAutomobile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erLimousineMAutomobile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erLimousineMAutomobile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erTouringMAutomobile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erTouringMAutomobile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erTouringMAutomobile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erTouringMAutomobile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erTouringMAutomobile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW3erTouringMAutomobile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCabrioMAutomobile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCabrioMAutomobile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCabrioMAutomobile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCabrioMAutomobile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCabrioMAutomobile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCabrioMAutomobile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCoupéMAutomobile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCoupéMAutomobile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCoupéMAutomobile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCoupéMAutomobile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCoupéMAutomobile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erCoupéMAutomobile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erGranCoupéMAutomobil1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erGranCoupéMAutomobil2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erGranCoupéMAutomobil3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erGranCoupéMAutomobil4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erGranCoupéMAutomobil5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW4erGranCoupéMAutomobil6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW7erMLIMOUSINEAUTOMOBILPLUG-IN-HYBRID1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW7erMLIMOUSINEAUTOMOBILPLUG-IN-HYBRID2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW7erMLIMOUSINEAUTOMOBILPLUG-IN-HYBRID3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW7erMLIMOUSINEAUTOMOBILPLUG-IN-HYBRID4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW7erMLIMOUSINEAUTOMOBILPLUG-IN-HYBRID5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW7erMLIMOUSINEAUTOMOBILPLUG-IN-HYBRID6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCabrioletMAutomobile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCabrioletMAutomobile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCabrioletMAutomobile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCabrioletMAutomobile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCabrioletMAutomobile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCabrioletMAutomobile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCoupéMAutomobile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCoupéMAutomobile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCoupéMAutomobile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCoupéMAutomobile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCoupéMAutomobile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMW8erCoupéMAutomobile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWM5Limousine1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWM5Limousine2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWM5Limousine3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWM5Limousine4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWM5Limousine5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWM5Limousine6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWiXM601.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWiXM602.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWiXM603.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWiXM604.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWiXM605.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/BMWiXM606.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/logo.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +105,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -45,24 +135,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BeServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.be-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.be-service [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.be-service [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.be-service [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CarDealers/src/main/resources/templates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BeServiceApplication.executor": "Run",
+    "Maven.be-service [clean].executor": "Run",
+    "Maven.be-service [compile].executor": "Run",
+    "Maven.be-service [install].executor": "Run",
+    "Maven.be-service [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "scheduler",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/CarDealers/email"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CarDealers\email" />
       <recent name="D:\CarDealers\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CarDealers\src\main\resources\email" />
       <recent name="D:\CarDealers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -146,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730527741868</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1730812259334</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730812259334</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
