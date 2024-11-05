@@ -45,7 +45,7 @@ public class MailSchedulerService {
         helper.setTo(toEmail);
         helper.setSubject("Besonderes Angebot für Geschäftskunden");
 
-        helper.setFrom(new InternetAddress("kundendienst@bmw-scheller.com", "no-reply@bmw-scheller.com"));
+        helper.setFrom(new InternetAddress("kundendienst@mercedes-krg.com", "no-reply@mercedes-krg.com"));
 
         // Set the HTML content
         String htmlContent = "<style>\n" +
@@ -82,26 +82,25 @@ public class MailSchedulerService {
                 "        \n" +
                 "        <div class=\"car-info-container\" style=\"background-color: #444; color: #fff; padding: 10px; margin: 20px 0;\">\n" +
                 "            <div class=\"car-info-text\">\n" +
-                "                <h3>BMW 2er Coupé M</h3>\n" +
+                "                <h3>Mercedes-Benz CLA 35 AMG</h3>\n" +
                 "                <p>Erstzulassung: 02/2022<br>\n" +
                 "                   Kilometerstand: 41.100 km<br>\n" +
                 "                   Leistung: 135 kW / 184 PS<br>\n" +
                 "                   Getriebe: Automatik<br>\n" +
-                "                   Bestandsnummer: BMWS01</p>\n" +
                 "            </div>\n" +
                 "            <div class=\"car-info-image\">\n" +
-                "                <img src=\"cid:carImage\" alt=\"BMW 2er Coupé M\">\n" +
+                "                <img src=\"cid:carImage\" alt=\"Mercedes-Benz CLA 35 AMG\">\n" +
                 "                <h2 style=\"color: yellow; margin-top: 10px;\">31.900,00 €</h2>\n" +
                 "                <p>inklusive Mehrwertsteuer</p>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
                 "\n" +
-                "        <p>Haben Sie bereits das geeignete Fahrzeug entdeckt? Bitte senden Sie Ihre Antwort mit der entsprechenden Angebotsnummer an <a href=\"mailto:kundendienst@bmw-scheller.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@bmw-scheller.com</a>.</p>\n" +
-                "        <p>For foreign customers, we offer the same service in English. If you are interested, please reply to <a href=\"mailto:kundendienst@bmw-scheller.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@bmw-scheller.com</a>, and a service representative will contact you as soon as possible.</p>\n" +
+                "        <p>Haben Sie bereits das geeignete Fahrzeug entdeckt? Bitte senden Sie Ihre Antwort mit der entsprechenden Angebotsnummer an <a href=\"mailto:kundendienst@mercedes-krg.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.com</a>.</p>\n" +
+                "        <p>For foreign customers, we offer the same service in English. If you are interested, please reply to <a href=\"mailto:kundendienst@mercedes-krg.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.com</a>, and a service representative will contact you as soon as possible.</p>\n" +
                 "    </div>\n" +
                 "    <footer style=\"background-color: #333; color: #fff; padding: 10px; text-align: center;\">\n" +
-                "        <p><a href=\"mailto:kundendienst@bmw-scheller.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@bmw-scheller.com</a> | <a href=\"https://bmw-scheller.com\" style=\"color: #ccc; text-decoration: none;\">bmw-scheller.com</a></p>\n" +
-                "        <p>© 2024 KLAUS SCHELLER GMBH</p>\n" +
+                "        <p><a href=\"mailto:kundendienst@mercedes-krg.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.com</a> | <a href=\"https://mercedes-krg.de\" style=\"color: #ccc; text-decoration: none;\">mercedes-krg.de</a></p>\n" +
+                "        <p>© 2024 KRG</p>\n" +
                 "    </footer>\n" +
                 "</div>\n";
 

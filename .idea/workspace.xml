@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="60055ec3-4a6e-4d52-8677-930ab4811e34" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email/emails.txt" beforeDir="false" afterPath="$PROJECT_DIR$/email/emails.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/util/MailSchedulerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/util/MailSchedulerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/util/MailSchedulerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/util/MailSchedulerService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="scheduler" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +60,7 @@
     "Maven.be-service [install].executor": "Run",
     "Maven.be-service [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "scheduler",
+    "git-widget-placeholder": "schedulermerc",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/CarDealers/email"
   }
@@ -174,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730818761870</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1730824579559</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730824579559</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
