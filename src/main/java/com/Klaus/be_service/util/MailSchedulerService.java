@@ -22,9 +22,10 @@ public class MailSchedulerService {
 
 
     // Limit to avoid exceeding Gmail's sending limit
-    private static final int EMAILS_PER_BATCH = 50;
+    private static final int EMAILS_PER_BATCH = 500;
     private static final long DELAY_BETWEEN_EMAILS_MS = 2000; // Delay between each email (e.g., 2 seconds)
-    private static final long DELAY_BETWEEN_BATCHES_MS = 60000; // Delay between batches (e.g., 1 minute)
+    private static final long DELAY_BETWEEN_BATCHES_MS = 24 * 60 * 60 * 1000;
+
 
     // One-time scheduler: Schedule the task to run once on application startup
     @Scheduled(initialDelay = 5000, fixedRate = Long.MAX_VALUE)
