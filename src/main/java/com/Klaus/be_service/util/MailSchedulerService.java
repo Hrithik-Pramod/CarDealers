@@ -20,21 +20,42 @@ public class MailSchedulerService {
     @Autowired
     private JavaMailSender mailSender;
 
+
+    // Limit to avoid exceeding Gmail's sending limit
+    private static final int EMAILS_PER_BATCH = 50;
+    private static final long DELAY_BETWEEN_EMAILS_MS = 2000; // Delay between each email (e.g., 2 seconds)
+    private static final long DELAY_BETWEEN_BATCHES_MS = 60000; // Delay between batches (e.g., 1 minute)
+
     // One-time scheduler: Schedule the task to run once on application startup
     @Scheduled(initialDelay = 5000, fixedRate = Long.MAX_VALUE)
     public void sendEmails() {
         try (BufferedReader br = new BufferedReader(new FileReader(jasperFilePath))) {
             String email;
+            int emailsSent = 0;
+
             while ((email = br.readLine()) != null) {
                 try {
                     sendHtmlEmail(email);
                     System.out.println("Email sent to: " + email);
+                    emailsSent++;
+
+                    // Throttle emails to avoid Gmail limits
+                    Thread.sleep(DELAY_BETWEEN_EMAILS_MS);
+
+                    // Limit emails per batch
+                    if (emailsSent % EMAILS_PER_BATCH == 0) {
+                        System.out.println("Batch limit reached, waiting before sending next batch...");
+                        Thread.sleep(DELAY_BETWEEN_BATCHES_MS);
+                    }
+
                 } catch (Exception e) {
                     System.out.println("Failed to send email to: " + email + ". Error: " + e.getMessage());
+                    // Implement retry with backoff if required
+                    handleFailedEmail(email, e);
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error reading email file: " + e.getMessage());
+            System.out.println("Error reading email file or interruption: " + e.getMessage());
         }
     }
 
@@ -90,7 +111,7 @@ public class MailSchedulerService {
                 "            </div>\n" +
                 "            <div class=\"car-info-image\">\n" +
                 "                <img src=\"cid:carImage\" alt=\"Mercedes-Benz CLA 35 AMG\">\n" +
-                "                <h2 style=\"color: yellow; margin-top: 10px;\">31.900,00 €</h2>\n" +
+                "                <h2 style=\"color: yellow; margin-top: 10px;\">52.789,00 €</h2>\n" +
                 "                <p>inklusive Mehrwertsteuer</p>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
@@ -110,10 +131,18 @@ public class MailSchedulerService {
         // Attach an image if needed
         helper.addInline("carImage", new File("/app/email/car.png"));
 
+        helper.setReplyTo("kundendienst@mercedes-krg.com");
+
         // Replace with the actual image path
 
-        helper.addAttachment("Klaus Scheller GmbH Katalog Herbst 2024 Ausgabe.pdf", new File("/app/email/Klaus Scheller GmbH Katalog Herbst 2024 Ausgabe.pdf")); // Replace with the actual PDF path
+        helper.addAttachment("krg catalogue.pdf", new File("/app/email/krg catalogue.pdf")); // Replace with the actual PDF path
 
         mailSender.send(message);
+    }
+
+    private void handleFailedEmail(String email, Exception e) {
+        // Handle failed email logic here
+        // Implement retry with exponential backoff if needed
+        System.out.println("Handling failed email: " + email + ". Error: " + e.getMessage());
     }
 }
