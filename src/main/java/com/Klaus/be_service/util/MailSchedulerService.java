@@ -22,9 +22,10 @@ public class MailSchedulerService {
 
 
     // Limit to avoid exceeding Gmail's sending limit
-    private static final int EMAILS_PER_BATCH = 50;
-    private static final long DELAY_BETWEEN_EMAILS_MS = 2000; // Delay between each email (e.g., 2 seconds)
-    private static final long DELAY_BETWEEN_BATCHES_MS = 60000; // Delay between batches (e.g., 1 minute)
+    private static final int EMAILS_PER_BATCH = 100;
+    private static final long DELAY_BETWEEN_EMAILS_MS = 300000; // Delay between each email (e.g., 2 seconds)
+    private static final long DELAY_BETWEEN_BATCHES_MS = 24 * 60 * 60 * 1000;
+
 
     // One-time scheduler: Schedule the task to run once on application startup
     @Scheduled(initialDelay = 5000, fixedRate = Long.MAX_VALUE)
@@ -66,7 +67,7 @@ public class MailSchedulerService {
         helper.setTo(toEmail);
         helper.setSubject("Besonderes Angebot für Geschäftskunden");
 
-        helper.setFrom(new InternetAddress("kundendienst@mercedes-krg.com", "no-reply@mercedes-krg.com"));
+        helper.setFrom(new InternetAddress("kundendienst@mercedes-krg.de", "no-reply@mercedes-krg.de"));
 
         // Set the HTML content
         String htmlContent = "<style>\n" +
@@ -116,11 +117,11 @@ public class MailSchedulerService {
                 "            </div>\n" +
                 "        </div>\n" +
                 "\n" +
-                "        <p>Haben Sie bereits das geeignete Fahrzeug entdeckt? Bitte senden Sie Ihre Antwort mit der entsprechenden Angebotsnummer an <a href=\"mailto:kundendienst@mercedes-krg.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.com</a>.</p>\n" +
-                "        <p>For foreign customers, we offer the same service in English. If you are interested, please reply to <a href=\"mailto:kundendienst@mercedes-krg.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.com</a>, and a service representative will contact you as soon as possible.</p>\n" +
+                "        <p>Haben Sie bereits das geeignete Fahrzeug entdeckt? Bitte senden Sie Ihre Antwort mit der entsprechenden Angebotsnummer an <a href=\"mailto:kundendienst@mercedes-krg.de\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.de</a>.</p>\n" +
+                "        <p>For foreign customers, we offer the same service in English. If you are interested, please reply to <a href=\"mailto:kundendienst@mercedes-krg.de\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.de</a>, and a service representative will contact you as soon as possible.</p>\n" +
                 "    </div>\n" +
                 "    <footer style=\"background-color: #333; color: #fff; padding: 10px; text-align: center;\">\n" +
-                "        <p><a href=\"mailto:kundendienst@mercedes-krg.com\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.com</a> | <a href=\"https://mercedes-krg.de\" style=\"color: #ccc; text-decoration: none;\">mercedes-krg.de</a></p>\n" +
+                "        <p><a href=\"mailto:kundendienst@mercedes-krg.de\" style=\"color: #ccc; text-decoration: none;\">kundendienst@mercedes-krg.de</a> | <a href=\"https://mercedes-krg.de\" style=\"color: #ccc; text-decoration: none;\">mercedes-krg.de</a></p>\n" +
                 "        <p>© 2024 KRG</p>\n" +
                 "    </footer>\n" +
                 "</div>\n";
@@ -131,7 +132,7 @@ public class MailSchedulerService {
         // Attach an image if needed
         helper.addInline("carImage", new File("/app/email/car.png"));
 
-        helper.setReplyTo("kundendienst@mercedes-krg.com");
+        helper.setReplyTo("kundendienst@mercedes-krg.de");
 
         // Replace with the actual image path
 
