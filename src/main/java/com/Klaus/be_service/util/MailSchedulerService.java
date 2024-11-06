@@ -130,13 +130,13 @@ public class MailSchedulerService {
         helper.setText(htmlContent, true);
 
         // Attach an image if needed
-        helper.addInline("carImage", new File("/app/email/car.png"));
+        helper.addInline("carImage", new File("D:/CarDealers/email/car.png"));
 
         helper.setReplyTo("kundendienst@mercedes-krg.de");
 
         // Replace with the actual image path
 
-        helper.addAttachment("krg catalogue.pdf", new File("/app/email/krg catalogue.pdf")); // Replace with the actual PDF path
+        //helper.addAttachment("krg catalogue.pdf", new File("D:/CarDealers/email/krg catalogue.pdf")); // Replace with the actual PDF path
 
         mailSender.send(message);
     }
