@@ -20,23 +20,46 @@ public class MailSchedulerService {
     @Autowired
     private JavaMailSender mailSender;
 
+
+    // Limit to avoid exceeding Gmail's sending limit
+    private static final int EMAILS_PER_BATCH = 50;
+    private static final long DELAY_BETWEEN_EMAILS_MS = 2000; // Delay between each email (e.g., 2 seconds)
+    private static final long DELAY_BETWEEN_BATCHES_MS = 60000; // Delay between batches (e.g., 1 minute)
+
     // One-time scheduler: Schedule the task to run once on application startup
     @Scheduled(initialDelay = 5000, fixedRate = Long.MAX_VALUE)
     public void sendEmails() {
         try (BufferedReader br = new BufferedReader(new FileReader(jasperFilePath))) {
             String email;
+            int emailsSent = 0;
+
             while ((email = br.readLine()) != null) {
                 try {
                     sendHtmlEmail(email);
                     System.out.println("Email sent to: " + email);
+                    emailsSent++;
+
+                    // Throttle emails to avoid Gmail limits
+                    Thread.sleep(DELAY_BETWEEN_EMAILS_MS);
+
+                    // Limit emails per batch
+                    if (emailsSent % EMAILS_PER_BATCH == 0) {
+                        System.out.println("Batch limit reached, waiting before sending next batch...");
+                        Thread.sleep(DELAY_BETWEEN_BATCHES_MS);
+                    }
+
                 } catch (Exception e) {
                     System.out.println("Failed to send email to: " + email + ". Error: " + e.getMessage());
+                    // Implement retry with backoff if required
+//                    handleFailedEmail(email, e);
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error reading email file: " + e.getMessage());
+            System.out.println("Error reading email file or interruption: " + e.getMessage());
         }
     }
+
+
 
     private void sendHtmlEmail(String toEmail) throws MessagingException, UnsupportedEncodingException {
         MimeMessage message = mailSender.createMimeMessage();
@@ -45,7 +68,7 @@ public class MailSchedulerService {
         helper.setTo(toEmail);
         helper.setSubject("Besonderes Angebot für Geschäftskunden");
 
-        helper.setFrom(new InternetAddress("kundendienst@bmw-scheller.com", "no-reply@bmw-scheller.com"));
+        helper.setFrom(new InternetAddress("kundendienst@bmw-scheller.com", "reply@bmw-scheller.com"));
 
         // Set the HTML content
         String htmlContent = "<style>\n" +
@@ -112,6 +135,8 @@ public class MailSchedulerService {
         helper.addInline("carImage", new File("/app/email/car.png"));
 
         // Replace with the actual image path
+
+        helper.setReplyTo("kundendienst@bmw-scheller.com");
 
         helper.addAttachment("Klaus Scheller GmbH Katalog Herbst 2024 Ausgabe.pdf", new File("/app/email/Klaus Scheller GmbH Katalog Herbst 2024 Ausgabe.pdf")); // Replace with the actual PDF path
 

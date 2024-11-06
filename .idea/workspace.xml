@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60055ec3-4a6e-4d52-8677-930ab4811e34" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email/emails.txt" beforeDir="false" afterPath="$PROJECT_DIR$/email/emails.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/util/MailSchedulerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/util/MailSchedulerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/util/MailSchedulerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/util/MailSchedulerService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +50,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BeServiceApplication.executor": "Run",
-    "Maven.be-service [clean].executor": "Run",
-    "Maven.be-service [compile].executor": "Run",
-    "Maven.be-service [install].executor": "Run",
-    "Maven.be-service [package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "scheduler",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/CarDealers/email"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;scheduler&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CarDealers/email&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CarDealers\email" />
@@ -97,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BeServiceApplication" />
         <item itemvalue="Application.BeServiceApplication" />
       </list>
     </recent_temporary>
