@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Besonderes Angebot für Geschäftskunden</title>
+    <style>
+        @media (min-width: 768px) {
+            .car-info-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .car-info-text {
+                flex: 1;
+                padding-right: 20px;
+            }
+            .car-info-image {
+                flex: 0 0 125px;
+                text-align: right;
+            }
+            .car-info-image img {
+                width: 125px;
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="font-family: Arial, sans-serif;">
+        <div style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+            <h2>Besonderes Angebot für Geschäftskunden</h2>
+        </div>
+        <div style="padding: 20px;">
+            <p>Sehr geehrte Damen und Herren,</p>
+            <p>wir freuen uns, Ihnen ein spezielles Angebot für Geschäftskunden anzukündigen. Profitieren Sie von günstigen Konditionen auf unser Sortiment an hochwertigen Gebrauchtwagen.</p>
+            <p>Unser Angebot umfasst eine breite Auswahl an Marken und Modellen, die ideal für den Wiederverkauf geeignet sind.</p>
+            <p>Sehen Sie sich unsere aktuellen Fahrzeuge an – klicken Sie auf den Anhang, um den aktuellen Fahrzeugkatalog herunterzuladen und Ihr Wunschauto zu finden!</p>
+            <div class="car-info-container" style="background-color: #444; color: #fff; padding: 10px; margin: 20px 0;">
+                <div class="car-info-text">
+                    <h3>BMW iX M60</h3>
+                    <p>Erstzulassung: 06/2023<br>
+                        Hubraum: Elektrisch<br>
+                        Leistung: 135 kW / 184 PS<br>
+                        Getriebe: Automatik<br>
+                        Bestandsnummer: BMWS01</p>
+                </div>
+                <div class="car-info-image">
+                    <img src="https://prod.pictures.autoscout24.net/listing-images/f4ee3cdb-0658-4902-92d9-9f065382f9ac_be923831-0910-435b-aea3-9879ac097354.jpg/480x360.webp" alt="BMW 2er Coupé M">
+                    <h2 style="color: yellow; margin-top: 10px;">Ab 76.300 €</h2>
+                    <p>inklusive Mehrwertsteuer</p>
+                </div>
+            </div>
+            <p>Haben Sie bereits das geeignete Fahrzeug entdeckt? Bitte senden Sie Ihre Antwort mit der entsprechenden Angebotsnummer an <a href="mailto:kundendienst@bmw-scheller.com" style="color: #ccc; text-decoration: none;">kundendienst@bmw-scheller.com</a>.</p>
+            <p>For foreign customers, we offer the same service in English. If you are interested, please reply to <a href="mailto:kundendienst@bmw-scheller.com" style="color: #ccc; text-decoration: none;">kundendienst@bmw-scheller.com</a>, and a service representative will contact you as soon as possible.</p>
+        </div>
+        <footer style="background-color: #333; color: #fff; padding: 10px; text-align: center;">
+            <p><a href="mailto:kundendienst@bmw-scheller.com" style="color: #ccc; text-decoration: none;">kundendienst@bmw-scheller.com</a> | <a href="bmw-scheller.com" style="color: #ccc; text-decoration: none;">bmw-scheller.com</a></p>
+            <p> 2024 KLAUS SCHELLER GMBH</p>
+        </footer>
+    </div>
+</body>
+</html>
