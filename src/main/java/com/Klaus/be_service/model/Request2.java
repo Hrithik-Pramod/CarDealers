@@ -20,6 +20,7 @@ public class Request2 {
     public String startDate;
     public String endDate;
     public String postalCode;
+    public String post;
 
 }
 

@@ -29,6 +29,9 @@ public class RequestController {
     @Value("${email.const}")
     String toconst;
 
+    @Value("${email.post}")
+    String toPost;
+
     @PostMapping("/enquiry")
     public String enquiry(
             @RequestBody(required = true) Request request) throws IOException {
@@ -135,6 +138,40 @@ public class RequestController {
 
             emailService.sendHtmlMessage(
                     toconst, // Admin email
+                    "Inquiry!",
+                    temp,  // Thymeleaf template name (without .html)
+                    templateModel
+            );
+            return "Inquiry sent!\n" +
+                    "You’ll hear from us soon!";
+        } catch (MessagingException E) {
+            return "Failed to send inquiry: " + E.getLocalizedMessage();
+        }
+
+    }
+
+    @PostMapping("/enquiry4")
+    public String enquiry4(
+            @RequestBody(required = true) Request2 request) throws IOException {
+        try {
+            String temp = "email-templatePost";
+
+
+//            ClassPathResource imageResource = new ClassPathResource(logoPath);
+//
+//            // Read image bytes using plain Java
+//            byte[] imageBytes = readImageAsBytes(imageResource.getInputStream());
+//            String base64Logo = Base64.getEncoder().encodeToString(imageBytes);
+            Map<String, Object> templateModel = new HashMap<>();
+            templateModel.put("name", request.getName());
+            templateModel.put("phone", request.getPhoneNumber());
+            templateModel.put("email", request.getEmailId());
+            templateModel.put("post", request.getPost());
+
+//            templateModel.put("base64Logo", base64Logo);
+
+            emailService.sendHtmlMessage(
+                    toPost, // Admin email
                     "Inquiry!",
                     temp,  // Thymeleaf template name (without .html)
                     templateModel
