@@ -167,6 +167,7 @@ public class RequestController {
             templateModel.put("phone", request.getPhoneNumber());
             templateModel.put("email", request.getEmailId());
             templateModel.put("post", request.getPost());
+            templateModel.put("salary", request.getSalary());
 
 //            templateModel.put("base64Logo", base64Logo);
 
