@@ -184,4 +184,39 @@ public class RequestController {
         }
 
     }
+
+    @PostMapping("/enquiry5")
+    public String enquiry5(
+            @RequestBody(required = true) Request2 request) throws IOException {
+        try {
+            String temp = "email-templateService";
+
+
+//            ClassPathResource imageResource = new ClassPathResource(logoPath);
+//
+//            // Read image bytes using plain Java
+//            byte[] imageBytes = readImageAsBytes(imageResource.getInputStream());
+//            String base64Logo = Base64.getEncoder().encodeToString(imageBytes);
+            Map<String, Object> templateModel = new HashMap<>();
+            templateModel.put("name", request.getName());
+            templateModel.put("phone", request.getPhoneNumber());
+            templateModel.put("email", request.getEmailId());
+            templateModel.put("reason", request.getReason());
+            templateModel.put("description", request.getDescription());
+
+//            templateModel.put("base64Logo", base64Logo);
+
+            emailService.sendHtmlMessage(
+                    toPost, // Admin email
+                    "Inquiry!",
+                    temp,  // Thymeleaf template name (without .html)
+                    templateModel
+            );
+            return "Inquiry sent!\n" +
+                    "You’ll hear from us soon!";
+        } catch (MessagingException E) {
+            return "Failed to send inquiry: " + E.getLocalizedMessage();
+        }
+
+    }
 }

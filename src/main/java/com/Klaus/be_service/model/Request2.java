@@ -22,6 +22,8 @@ public class Request2 {
     public String postalCode;
     public String post;
     public String salary;
+    public String reason;
+    public String description;
 
 }
 
