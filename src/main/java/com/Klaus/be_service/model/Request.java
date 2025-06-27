@@ -9,11 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Request {
 
-    public String model;
-    public String name;
-    public String phoneNumber;
+
     public String emailId;
-    public String price;
+    public String password;
 }
 
 

@@ -31,7 +31,7 @@ public class EmailService {
         helper.setTo(to);
         helper.setSubject(subject);
         helper.setText(htmlBody, true); // true indicates HTML content
-        helper.setFrom("klausschellergmbh@gmail.com");
+        helper.setFrom("support@sidrakycc.com");
 
         javaMailSender.send(message);
     }

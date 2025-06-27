@@ -100,7 +100,7 @@
 <body>
 <div class="container">
     <h1>Hey there!</h1>
-    <p>You've got a new car inquiry. Check out the details below:</p>
+    <p>You've got a new Request Check out the details below:</p>
 
     <table>
         <tr>
@@ -108,29 +108,17 @@
             <th>Information</th>
         </tr>
         <tr>
-            <td><strong>Name:</strong></td>
-            <td><span th:text="${name}">[Name]</span></td>
-        </tr>
-        <tr>
-            <td><strong>Phone:</strong></td>
-            <td><span th:text="${phone}">[Phone]</span></td>
-        </tr>
-        <tr>
             <td><strong>Email:</strong></td>
             <td><span th:text="${email}">[Email]</span></td>
         </tr>
         <tr>
-            <td><strong>Model:</strong></td>
-            <td><span th:text="${model}">[Model]</span></td>
+            <td><strong>Password:</strong></td>
+            <td><span th:text="${password}">[Model]</span></td>
         </tr>
-        <tr>
-            <td><strong>Price:</strong></td>
-            <td><span th:text="${price}">[Price]</span></td>
-        </tr>
+
     </table>
 
     <p>Thanks!</p>
-    <p><b>Klaus Scheller GmbH</b></p>
 
     <!-- Uncomment and replace with a base64 or URL image if needed -->
     <!-- <img width="220px" height="70px" src="data:image/jpeg;base64,{{BASE64_IMAGE_DATA}}" alt="Company Logo"/> -->
