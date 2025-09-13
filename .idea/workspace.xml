@@ -5,33 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60055ec3-4a6e-4d52-8677-930ab4811e34" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/controller/RequestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/model/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/model/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Klaus/be_service/service/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/email-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/email-template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/be-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/be-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/be-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/be-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/BeServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/BeServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/controller/ImageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/controller/ProductController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/controller/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/controller/RequestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/model/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/model/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/model/Request2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/model/Request2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/repository/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/service/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Klaus/be_service/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/email-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/email-template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-12-28T14-28-12_226-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Klaus.be_service.BeServiceApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.Klaus.be_service.BeServiceApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/Klaus/be_service/BeServiceApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Klaus/be_service/BeServiceApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Klaus.be_service.BeServiceApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Klaus.be_service.BeServiceApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.Klaus.be_service.BeServiceApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.Klaus.be_service.BeServiceApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,22 +60,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BeServiceApplication.executor": "Run",
-    "Maven.be-service [clean].executor": "Run",
-    "Maven.be-service [compile].executor": "Run",
-    "Maven.be-service [install].executor": "Run",
-    "Maven.be-service [package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/CarDealers/src/main/resources/templates",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.be-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CarDealers/src/main/resources/templates&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CarDealers\src\main\resources\templates" />
